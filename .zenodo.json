@@ -1,0 +1,14 @@
+{
+  "title": "Replication Package for \"Gender Identity and Economic Decision Making\"",
+  "upload_type": "dataset",
+  "description": "Data and code that reproduce the tables and figures in \"Gender Identity and Economic Decision Making\" (Journal of Human Resources) and its Online Appendix. The Swedish Youths data are not included. See README.md for details.",
+  "creators": [
+    {"name": "Ardila Brenøe, Anne"},
+    {"name": "Eyibak, Zeynep"},
+    {"name": "Heursen, Lea"},
+    {"name": "Ranehill, Eva"},
+    {"name": "Weber, Roberto A."}
+  ],
+  "license": "cc0-1.0",
+  "version": "1.0"
+}

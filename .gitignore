@@ -1,0 +1,7 @@
+.DS_Store
+3_out/*.*
+3_out/*/*
+!3_out/*/.gitkeep
+1_data/4_temp/*
+!1_data/4_temp/.gitkeep
+*.mat

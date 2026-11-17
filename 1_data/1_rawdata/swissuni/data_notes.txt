@@ -1,0 +1,41 @@
+Otree data (experimental part):
+>all_apps_wide-XXXXXX.csv
+Names of main outcome varibles:
+part1.1.player.investment: incentivized risk (amoumnt invested)
+ppart2_task3.1.player.choice: decision to enter a competition (1=piece rate, 2=tournament)
+part3.X.player.budget_s with X in {1,2,..,15} rounds: amount allocated to self in allocation decision X
+part3.X.player.budget_o with X in {1,2,..,15} rounds: amount allocated to other in decision X
+part4.8.player.performance_guess: guess how many correct out of 8 "Number of problems I believe I solved corrrectly"
+part4.8.player.rank_guess: guess rank out of 26 "My estimated rank" for the raven matrices task (8 matrices)
+
+
+
+
+Survey at the end of the experimental part (implemented in Qualtrics):
+>ContinuousGender_MainStudy_XXXXXX.csv
+Payment Srcript that also calculates some variables:
+>sessionXXXXXX_payment.csv
+
+Keys to be able to match the responses in otree with the follow up survey data:
+>ContinuousGender_Keys_otree_follow-up_survey.xlsx
+
+Follow-up survey (implemented in Qualtrics):
+>ContinuousGender_FollowUpStudy_November+1,+2021_14.50.csv 
+
+payment script data sets (sessionXXXXXX_payment.csv calculate the following variables: 
+
+variable rank1: rank out of 4 in Part 2 task 2 (compeititon, no choice)
+variable rank2: rank out of 4 in Part 2 task 3 (default of this variable is "0"; this is replaced with an actual rank out of 4 provided that the participant chose to compete)
+variable rank20: calculates Part 2 task 2 rank out of 26 (randomly chosen reference groups of size 25); label rank20 is carried over from an older version of the code 
+rank_puzzle: calculates Part 4 rank out of 26  (randomly chosen reference groups of size 25)
+
+these data are generated from the input files all_apps_wide-XXXXXX with a power shell script developped by Oliver Brägger (ETH DeScill): payment_session.ps
+
+performance in Part 2 
+
+task  (piece-rate): survey1playercorrect1
+task 2 (competition): survey1playercorrect2 
+task 3 (choice) :  survey1playercorrect3
+
+Follow-up survey:
+Performance ASVAB: sc0_fo
