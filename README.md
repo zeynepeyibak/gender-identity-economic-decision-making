@@ -2,17 +2,15 @@
 
 Anne Ardila Brenøe, Zeynep Eyibak, Lea Heursen, Eva Ranehill, and Roberto A. Weber
 
-*Journal of Human Resources* (accepted 2026)
+*Forthcoming Journal of Human Resources* 
 
 ---
 
 ## Overview
 
-This package contains the data and code that produce the tables and figures in the paper and its Online Appendix. The code is written in Stata. Two steps use other software: a MATLAB script that estimates the equality–efficiency parameter ρ for the Swiss Uni sample, and two Python notebooks that compute the Kolmogorov–Smirnov tests reported in Figures 2 and 4. 
+This package contains the data and code that produce the tables and figures in the paper and its Online Appendix. The code is written in Stata. Two steps use other software: a MATLAB script that estimates the equality–efficiency parameter ρ for the Swiss Uni sample and two Python notebooks that compute the Kolmogorov–Smirnov tests reported in Figures 2 and 4. 
 
 The master file `2_do/000_master.do` lists all Stata programs in the order in which they should be run. The package includes the data for three of the four main samples (Swiss Uni, U.S. Adults, Swiss Teens). The Swedish Youths data are not included: they were collected as part of an ongoing study led by one of the authors (Ranehill) and will be made publicly available once that study is completed
-
-The data in this package are released under CC0 1.0 (see `LICENSE`). 
 
 ---
 
@@ -133,8 +131,6 @@ Brenoe_et_al_Replication/
 
 The programs in `2_analysis/11_nonbinary/1_prepare data set/` repeat these steps without excluding non-binary participants and save the resulting files in `2_analysis/11_nonbinary/`.
 
-The sample restrictions summarized in Online Appendix Table B5 (non-consent, missing or non-binary gender, inconsistent gender reports, failed attention checks, duplicate responses) are applied in the prepare programs; the comment next to each `drop` or `keep` gives the number of observations removed at that step.
-
 ---
 
 ## Instructions to Replicators
@@ -150,13 +146,13 @@ The sample restrictions summarized in Online Appendix Table B5 (non-consent, mis
 - `2_do/2_analysis/3_Main_Meta/2_KS_1t.ipynb` reads `1_data/5_meta/1_pval/table_*_panelC.dta` and `table_*_panelD.dta` and writes `CGI_pooled_KS.dta`, `CGI_female_KS.dta`, `CGI_male_KS.dta` to the same folder (used by `3_Meta_p.do`, Figure 2).
 - `2_do/2_analysis/4_othermeasures_vs_CGI/5_KS_1t .ipynb` reads the files written by `4_p_val.do` in `1_data/5_meta/4_pval_other/` and writes the `*_KS.dta` files there (used by `6_p_CDF.do`, Figure 4).
 
-In each notebook, replace `/path/to/replication_folder` in the first cell with the full path of this folder, run all cells, and then re-run `3_Meta_p.do` or `6_p_CDF.do`.
+In each notebook (or just once in the master file), replace `/path/to/replication_folder` in the first cell with the full path of this folder, run all cells, and then re-run `3_Meta_p.do` or `6_p_CDF.do`.
 
 ---
 
 ## List of Tables and Figures
 
-All programs are in `2_do/2_analysis/`; all outputs are in `3_out/`. Exhibits marked † use the Swedish Youths data and cannot be reproduced from this package.
+All programs are in `2_do/2_analysis/`; all outputs are in `3_out/`. Exhibits marked † use the Swedish Youths data and cannot be reproduced until the data becomes available.
 
 ### Main text
 
