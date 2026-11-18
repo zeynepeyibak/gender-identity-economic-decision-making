@@ -138,6 +138,7 @@ The programs in `2_analysis/11_nonbinary/1_prepare data set/` repeat these steps
 1. Install the Stata packages listed above.
 2. Open `2_do/000_master.do` and set `global path` to the full path of this folder.
 3. The Swedish Youths data are not included, so `2_do/000_master.do` cannot be run in full, and the programs that use these data (marked † in the list of tables and figures) stop with an error. Run all other programs individually, in the order listed in `2_do/000_master.do`, after running the `global path` line of `2_do/000_master.do`.
+4. The MATLAB script and the two Python notebooks are not run from `2_do/000_master.do` (they appear there as commented lines) and must be run separately, as described below. The notebooks do not use the path set in the master file.
 
 **MATLAB step: re-estimate ρ.** `1_prepare_rho.do` writes `3_input_matlab.csv` to `1_data/1_rawdata/swissuni/rho/`. In MATLAB, run `run('<path>/1_data/1_rawdata/swissuni/rho/4_mlolik_CG.m')`. The script uses `lolik.m` and `nlregf.m` in the same folder and writes `5_Results.csv` there, which `1_prepare_swissuni.do` reads. The estimation implements the maximum-likelihood approach of Fisman, Kariv, and Markovits (2007), adapted to 15 fixed budget sets.
 
