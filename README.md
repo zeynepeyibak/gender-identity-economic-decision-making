@@ -2,7 +2,7 @@
 
 Anne Ardila Brenøe, Zeynep Eyibak, Lea Heursen, Eva Ranehill, and Roberto A. Weber
 
-*Forthcoming Journal of Human Resources* 
+*Forthcoming at Journal of Human Resources* 
 
 Zenodo: https://doi.org/10.5281/zenodo.24335296
 ---
