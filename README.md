@@ -50,8 +50,10 @@ The master file `2_do/000_master.do` lists all Stata programs in the order in wh
 | `usadults_w2/cgi_validation_20-29_prolific_230321.xlsx`, `_30-39_`, `_40-49_`, `_50-60_` | Wave 2 Prolific by age group |
 
 **Swiss Teens.** 
+Survey data merged with user data from Yousty.ch
 
 **Swiss parent–child survey.** 
+Collected as part of Brenøe and Rutnam "Parents' Perceptions of Occupational Fit" (2025). 
 
 **Swedish Youths (not included).**  
 Conducted as part of an ongoing study led by one of the authors (Ranehill) (see Online Appendix D.4). The full dataset and instructions will be made publicly available once that primary study is completed. 
